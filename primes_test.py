@@ -9,7 +9,12 @@ class prime_test(unittest.TestCase):
 		self.assertRaises(TypeError, prime,"ben")
 	def test_for_numbers_less_than_2(self):
 		self.assertRaises(ValueError,prime,2)
+	def test_for_prime_called_with_no_argument(self):
+		self.assertRaises(TypeError,prime, )
+	def test_for_a_list_returned(self):
+		self.assertIsInstance(prime(10),list)
 	
+
 
    
 if __name__ == '__main__':
