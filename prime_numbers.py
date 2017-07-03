@@ -14,7 +14,7 @@ def prime(limit):
 		if limit < 9:
 			result.append(number)
 	#all odd numbers above 9 must meet these conditions to be prime
-		if ((limit//2 != 0)and(limit//3 != 0) and (limit//5 != 0) and (limit//5 != 0) and (limit//7 != 0)):
+		if ((limit//3 != 0) and (limit//5 != 0) and (limit//5 != 0) and (limit//7 != 0)):
 			result.append(number)
 	return result
 
