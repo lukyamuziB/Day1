@@ -10,8 +10,10 @@ def prime(limit):
 
 	#since the only prime even number is 2, we only look at odd numbers
 	for number in range(3,limit,2):
+	#all odd nummbers bellow 9 are prime
 		if limit < 9:
 			result.append(number)
+	#all odd numbers above 9 must meet these conditions to be prime
 		if ((limit//2 != 0)and(limit//3 != 0) and (limit//5 != 0) and (limit//5 != 0) and (limit//7 != 0)):
 			result.append(number)
 	return result
